@@ -22,11 +22,15 @@ The fractional uncertainty on DM is always less than 1/1000, it's essentially pe
 
 Following Macquart et al. (2020), 
 
-$$\mathrm{DM}(z_i) = \mathrm{DM}_\mathrm{MW} + \mathrm{DM}_\mathrm{cosmo}(z_i | \Lambda) + \mathrm{DM}_\mathrm{host}(z_i | \theta_i)$$
+$$\mathrm{DM}(z_i) = \mathrm{DM}_\mathrm{MW} + \mathrm{DM}_\mathrm{cosmo}(z_i | \Lambda) + \mathrm{DM}_\mathrm{host}(z_i | \theta_i)/(1 + z_i)$$
 
-where the MW contribution is a sum of the ISM and halo contributions, $\Lambda$ are parameters that are common to every FRB in the Universe (like the background cosmology, including $\Omega_b$, fraction of cosmic baryons in diffuse ionized gas, mass fraction of Helium, etc.) and $\theta_i$ are parameters that are unique to the host galaxy.
+where the MW contribution is a sum of the ISM and halo contributions, $\Lambda$ are parameters that are common to every FRB in the Universe (like the background cosmology, including $\Omega_b$, fraction of cosmic baryons in diffuse ionized gas, mass fraction of Helium, scatter in electron column density along different lines of sight, etc.) and $\theta_i$ are parameters that are unique to the host galaxy. The host galaxy contribution is the dispersion in the rest frame of the host galaxy, hence the extra (1 + z) term. Technically some of the parameters in $\Lambda$ also depend on the line of sight, if we have more information about the line of sight we can split the cosmo (equivalently, IGM) contribution into background cosmology + line of sight IGM. 
 
 For some reasonable values for the ionized gas, the *average* cosmological contribution is approximately (Eq. 4 of Xu et al. 2021):
 $$\mathrm{DM}_\mathrm{cosmo}(z_i) \approx  807\,\mathrm{pc}\,\mathrm{cm}^{-3} \int_0^{z_i} \frac{(1+z)dz}{(\Omega_m(1+z)^3 + \Omega_\Lambda)^{1/2}}$$
 
 However the electron column density has some scatter due to large-scale structure. According to cosmological simulations, this scatter in terms of fractional standard deviation of $\mathrm{DM}_\mathrm{cosmo}$ is $Fz^{-1/2}$ for $z < 1$ (Macquart et al. 2020). $F$ measures the (inverse) strength of baryon feedback. 
+
+Meanwhile, without specific information about the host galaxy, we can assume the host galaxy contribution is drawn from a log-normal distribution. 
+
+The MW terms can be assumed to be fixed. 
