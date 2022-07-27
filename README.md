@@ -47,8 +47,14 @@ The term $p_\mathrm{gal}(\theta)$ should be thought of as a posterior on each ga
 
 ### Likelihood given $N$ FRB events
 
-$$p(\left{d_i \right}_N, \left{\mathrm{DM}_i \right}_N, \left{\Omega_i \right}_N, \left{z_i \right}_N, \left{\theta_i \right}_N | \lambda) = \Prod_{i = 1}^N \frac{p(d_i | \mathrm{DM}_i, \Omega_i) p(\mathrm{DM}_i | z_i, \lambda, \theta_i)p(\Omega_i, z_i, theta_i}{P_\mathrm{det}(\lambda)}$$
+$$p(\{d_i \}_N, \{ \mathrm{DM}_i \}_N, \{\Omega_i \}_N, \{z_i \}_N, \{\theta_i \}_N | \lambda) = \prod_{i=1}^N \frac{p(d_i | \mathrm{DM}_i, \Omega_i) p(\mathrm{DM}_i | z_i, \lambda, \theta_i)p(\Omega_i, z_i, \theta_i)}{P_\mathrm{det}(\lambda)}$$
 
-The numerator is 
-$$p(d_i | \mathrm{DM}_i, \Omega_i) p(\mathrm{DM}_i | z_i, \lambda, \theta_i) \Sum_\mathrm{gal} $$
+Each term in the numerator is 
+$$p(d_i | \mathrm{DM}_i, \Omega_i) p(\mathrm{DM}_i | z_i, \lambda, \theta_i) \[\sum_\mathrm{gal} w_\mathrm{gal} \delta(z_i - z_\mathrm{gal})\delta(\Omega_i-\Omega_\mathrm{gal})p_\mathrm{gal}(\theta_i) \]$$
+
+Marginalizing over the single-event parameters, we get that each term in the numerator is:
+
+$$\sum_\mathrm{gal} w_\mathrm{gal} \int p(d_i | \mathrm{DM}_i, \Omega_\mathrm{gal}) p(\mathrm{DM}_i | z_\mathrm{gal}, \lambda, \theta_i) p_\mathrm{gal}(\theta_i) d\mathrm{DM}_i d\theta_i $$
+
+
 
