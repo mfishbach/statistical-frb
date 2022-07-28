@@ -56,5 +56,10 @@ Marginalizing over the single-event parameters, we get that each term in the num
 
 $$\sum_\mathrm{gal} w_\mathrm{gal} \int p(d_i | \mathrm{DM}_i, \Omega_\mathrm{gal}) p(\mathrm{DM}_i | z_\mathrm{gal}, \lambda, \theta_i) p_\mathrm{gal}(\theta_i) d\mathrm{DM}_i d\theta_i $$
 
+If the DM is perfectly measured for each FRB, this becomes: 
+
+$$\sum_\mathrm{gal} w_\mathrm{gal} \int p(d_i | \Omega_\mathrm{gal}) p(\mathrm{DM}_i | z_\mathrm{gal}, \lambda, \theta_i) p_\mathrm{gal}(\theta_i) d\theta_i $$
+
+
 
 
