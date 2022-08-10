@@ -7,6 +7,10 @@ Some relevant papers/links:
 * [Macquart et al. 2020](https://arxiv.org/abs/2005.13161)
 * [Xu et al. 2021](https://iopscience.iop.org/article/10.3847/2041-8213/ac399c/pdf)
 * [CHIME catalog](https://www.chime-frb.ca/catalog)
+* [Shin et al. 2022](https://ui.adsabs.harvard.edu/abs/2022arXiv220714316S/abstract)
+* [James et al. 2022a](https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4775J/abstract)
+* [James et al. 2022b](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510L..18J/abstract)
+* [James et al. 2022c](https://ui.adsabs.harvard.edu/abs/2022arXiv220800819J/abstract)
 
 ### FRB observables
 
